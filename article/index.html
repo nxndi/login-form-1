@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BandungIn - Article</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="">BANDUNG<span>IN</span></a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="#comments">Comments</a></li>
+
+                        <div class="login-container">
+                            <a href="../Login-Form/login-form.html" id="login"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z"/></svg></a>
+                        </div>
+                    </ul>
+                </nav>
+
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </div>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Slider -->
+    <section id="slider">
+        <div class="title main-container">
+            <h3 class="pre-title">Lokasi</h3>
+            <h1 class="section-title">Curug Malela</h1>
+        </div>
+        
+        <div class="slider main-container">
+            <div class="img-slider">
+                <div class="slide active">
+                    <img src="images/Curug-Malela1.jpg" alt="">
+                </div>
+        
+                <div class="slide">
+                    <img src="images/Curug-Malela2.jpg" alt="">
+                </div>
+        
+                <div class="slide">
+                    <img src="images/Curug-Malela3.jpg" alt="">
+                </div>
+        
+                <div class="slide">
+                    <img src="images/Curug-Malela4.jpg" alt="">
+                </div>
+            
+                <div class="slide">
+                    <img src="images/Curug-Malela5.jpg" alt="">
+                </div>
+                
+                <div class="navigation">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title main-container">
+            <h3 id="description">Description :</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique sint ratione harum omnis excepturi voluptatibus hic fuga! Alias accusantium ipsa nihil officiis. Eligendi mollitia magnam nemo consectetur dolorum quibusdam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique sint ratione harum omnis excepturi voluptatibus hic fuga! Alias accusantium ipsa nihil officiis. Eligendi mollitia magnam nemo consectetur dolorum quibusdam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique sint ratione harum omnis excepturi voluptatibus hic fuga! Alias accusantium ipsa nihil officiis. Eligendi mollitia magnam nemo consectetur dolorum quibusdam?</p>
+        </div>
+    </section>
+    <!-- End of Slider -->
+
+    <!-- Comment -->
+    <section id="comments">
+        <div class="contact main-container">
+            <div class="contact-left">
+                <form class="contact-form" action="" method="post">
+                    <div>
+                        <input type="text" placeholder="Name" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Write a Comment..." id="comment" cols="30" rows="15" oninput="autoSize(this)" required></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-submit" onclick="tambahKomentar()">Submit</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="contact-right">
+                <div class="title-container">
+                    <h2>Comments</h2>
+                </div>
+                <div id="comment-container" class="comment-container">
+                    <!-- Tempat untuk menampilkan komentar -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Comment -->
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

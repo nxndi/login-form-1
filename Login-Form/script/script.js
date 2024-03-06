@@ -21,7 +21,7 @@ function checkLogin() {
     if (email === 'kelompok3@gmail.com' && password === 'admin123') {
         alert('Login berhasil!, Selamat datang di BandungIn');
         // Redirect ke halaman dasbor
-        window.location.href = 'dasboard-admin.html';
+        window.location.href = '../article/index.html';
         return false; // Mencegah formulir untuk di-submit
     } else {
         alert('Login gagal. Periksa kembali username dan password.');
